@@ -19,6 +19,7 @@ public class CollectorsExample {
         String lose = lst.parallelStream().collect(Collectors.joining());
         String win = emp.parallelStream().map(Employee::getName).collect(Collectors.joining(" "));
         System.out.println(win);
+        System.out.println(lose);
 //        Map<String,List<Employee>> duplicate = emp.stream().collect(Collectors.groupingBy(e->e.getName()));
 //        duplicate.forEach((name,listOfObj) ->{
 //            System.out.println(name);
